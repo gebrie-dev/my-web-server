@@ -1,46 +1,26 @@
 # my-web-server
 
-This project is a simple web server built with Node.js and Express. It includes three routes (/name, /hobby, /dream) that respond with static messages.
+This is a simple Node.js web server with three routes to display personal information, hobbies, and motivational messages.
 
-#Features
-/name: Returns your full name as plain text.
-/hobby: Returns your favorite hobby as a JSON object.
-/dream: Returns a motivational message about your dream or goal in life.
-Setup Instructions
-1. Clone the Repository
-To get a copy of this project, use the following command:
+## Setup Instructions
 
-bash
-Copy code
-git clone https://github.com/<your-username>/<repository-name>.git
-2. Navigate to the Project Directory
-bash
-Copy code
-cd <repository-name>
-3. Install Dependencies
-Make sure you have Node.js installed. Then, install the required packages:
+### Prerequisites
+- Node.js and npm installed on your system.
 
-bash
-Copy code
-npm install
-4. Run the Server Locally
-Start the server with:
+### Steps
+1. Clone this repository:
 
-bash
-Copy code
-node server.js
-The server will be running at http://localhost:3000.
+   git clone https://github.com/gebrie-dev/my-web-server
+   
+2. Navigate into the project directory:
 
-5. Test the Routes
-Use your browser or a tool like Postman to test the following routes:
-
-http://localhost:3000/name
-http://localhost:3000/hobby
-http://localhost:3000/dream
-Deployment
-This server is deployed and publicly accessible at:
-Live Server Link
-
-Technologies Used
-Node.js: JavaScript runtime environment.
-Express.js: Web framework for building server-side applications.
+   cd my-stage1
+   
+3.Install dependencies:
+  npm install
+4. Start the server:
+   node server.js
+   
+## Technologies Used
+- Node.js
+- Express.js
