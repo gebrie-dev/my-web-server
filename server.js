@@ -1,15 +1,13 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 4000;
 
 app.get("/name", (req, res) => {
-  res.send(" gebre wagnew mamay");
+  res.send("gebre wagnew mamay");
 });
 
 app.get("/hobby", (req, res) => {
   res.json({
-    hobby:
-      "My hobby is staying active by playing football and imagining myself as part of FC Barcelona",
+    hobby: "My hobby is staying active by playing football and imagining myself as part of FC Barcelona",
   });
 });
 
@@ -19,6 +17,7 @@ app.get("/dream", (req, res) => {
   );
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+// Wrapping your Express app as a serverless function
+module.exports = (req, res) => {
+  app(req, res);
+};
